@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fazendas cadastradas</title>
+  <title>Fazendas </title>
   <link rel="stylesheet" href="cadastro.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4344/4344842.png">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <span>Cadastro de Fazendas</span>
-      <button onclick="openModal()" id="new">Novo Cadastro</i></button>
+      <span>Fazendas Cadastradas</span>
+      <a href="cadastro.html"> <button id="new">Gerenciamento</i></button>     </a>
     </div>
 
     <div class="divTable">
@@ -27,8 +28,7 @@
             <th>Centroide </th>
             <th>ID </th>
 
-            <th class="acao">Editar</th>
-            <th class="acao">Excluir</th>
+        
           </tr>
         </thead>
         <tbody>
@@ -54,13 +54,13 @@
           <label for="m-id">ID</label>
           <input id="m-id" type="number" required />
 
-          <button id="btnSalvar">Salvar</button>
+          <button id="btnSalvar"></button>
         </form>
       </div>
     </div>
 
   </div>
-  <script src="cadastro.js"></script>
+  <script src="fazendas.js"></script>
 </body>
 
 </html>
