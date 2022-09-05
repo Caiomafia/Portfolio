@@ -56,7 +56,7 @@ function insertItem(item, index) {
   let tr = document.createElement('tr')
 
   tr.innerHTML = `
-    <td>${item.nome}</td>
+    <a href="maps.html"> <button class="btnname"  >  ${item.nome} </button> </a>
     <td>${item.funcao}</td>
     <td>${item.sG}</td>
     <td> ${item.sC}</td>
@@ -112,3 +112,4 @@ const getItensBD = () => JSON.parse(localStorage.getItem('dbfunc')) ?? []
 const setItensBD = () => localStorage.setItem('dbfunc', JSON.stringify(itens))
 
 loadItens()
+alert('aperte no nome da pessoa para abrir a manipulção pelo maps ')

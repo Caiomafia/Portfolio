@@ -18,11 +18,15 @@ function insertItem(item, index) {
     let tr = document.createElement('tr')
 
     tr.innerHTML = `
-    <td>${item.nome}</td>
+    <ol id='list'>
+    <li class="animals">${item.nome}
     <td>${item.funcao}</td>
     <td>${item.sG}</td>
     <td> ${item.sC}</td>
     <td> ${item.sId}</td>  
+    </li>
+    </ol>
+    
     `
 
 
@@ -69,3 +73,20 @@ const getItensBD = () => JSON.parse(localStorage.getItem('dbfunc')) ?? []
 const setItensBD = () => localStorage.setItem('dbfunc', JSON.stringify(itens))
 
 loadItens()
+
+/*Teste de uma lista de*/ 
+// JavaScript code
+function search_animal() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('animals');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="list-item";                 
+      }
+  }
+}
