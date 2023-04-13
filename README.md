@@ -3,7 +3,7 @@
 LOJINHA DE CAFÉ
 
 
-link : https://caiomafia.github.io/Coffee/#
+link : https://caiomafia.github.io/Portfoli.o/
 ## 🚀 MOBILE
 
 ![image](https://user-images.githubusercontent.com/91575842/194760536-32a10118-58c5-46d2-81da-d785ab1f4433.png)
