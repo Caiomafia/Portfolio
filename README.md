@@ -7,14 +7,14 @@
 link : https://caiomafia.github.io/Portfoli.o/
 ## 🚀 MOBILE
 
-![image](https://user-images.githubusercontent.com/91575842/194760536-32a10118-58c5-46d2-81da-d785ab1f4433.png)
+![image]()
 
 ## 🚀 CODE
-![image](https://user-images.githubusercontent.com/91575842/194760817-4b5906f7-c7b7-4e68-9970-7ab38c0e8d08.png)
+![image])
 
 ## 🚀 INICIAL
 
-![image](https://user-images.githubusercontent.com/91575842/194760915-5ccb0133-cc00-4b71-9867-7be213374ab4.png)
+![image]()
 
 
 
