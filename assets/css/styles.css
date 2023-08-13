@@ -858,6 +858,10 @@ img{
         width: 200px;
     }
 
+    .portfolio__description{
+        text-align: center;
+    }
+
 }
 
 /* For medium devices */
@@ -878,6 +882,7 @@ img{
     .project__container,
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
+        
     }
 
     .qualification__sections{
