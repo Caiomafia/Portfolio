@@ -66,6 +66,16 @@
         justify-content: center;
     }
 
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home__social{
+        display: flex;
+
+    }
+
 
 }
 
@@ -202,6 +212,12 @@
     }
     .footer__copy{
         margin-top: 4.5rem;
+    }
+
+
+    .home__social{
+        display: flex;
+        flex-direction: column;
     }
 }
 
