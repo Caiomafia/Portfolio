@@ -36,6 +36,8 @@
     .portfolio__description{
         text-align: center;
     }
+    .home__data{ text-align: center;}
+
 
 }
 
@@ -51,6 +53,10 @@
         order: 1;
         justify-self: center;
     }
+
+
+    .home__data{ text-align: center;}
+
 
     .about__container,
     .portfolio__content,
@@ -137,9 +143,10 @@
     .home__blob{
         width: 270px;
     }
-    .home__scroll{
-        display: block;
-    }
+    .home__scroll{display: block;}
+        
+    .home__social{ }
+
     .home__scroll-button{
         margin-left: 3rem;
     }
