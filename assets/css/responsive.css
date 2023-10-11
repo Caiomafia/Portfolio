@@ -1,6 +1,6 @@
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 450px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -8,6 +8,7 @@
 
     .nav__menu{
         padding: 2rem .25rem 4rem;
+        
     }
     .nav__list{
         column-gap: 0;
@@ -20,6 +21,8 @@
     .home__blob{
         width: 180px;
     }
+
+     
 
     .skills__title{
         font-size: var(--normal-font-size);
@@ -36,22 +39,27 @@
     .portfolio__description{
         text-align: center;
     }
-    .home__data{ text-align: center;}
-
+    
+    .home__content{
+    flex-direction: column;
+    text-align: center;
+    }
+   
+    .home__social-icon ,
+     .home__scroll{display: none;}
 
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (max-width: 568px){
     .home__content{
         grid-template-columns: max-content 1fr 1fr;
     }
-    .home__data{
-        grid-column: initial;
-    }
+    
     .home__img{
         order: 1;
         justify-self: center;
+        width: 300px;
     }
 
 
@@ -72,16 +80,21 @@
         justify-content: center;
     }
 
-    .flex{
-        display: flex;
-        flex-direction: column;
-    }
+    
 
     .home__social{
         display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+
 
     }
 
+    .home__content{
+        flex-direction: column-reverse;
+    }
+ 
+    .home__scroll{text-align: center; justify-items: center;}
 
 }
 
@@ -220,6 +233,8 @@
     .footer__copy{
         margin-top: 4.5rem;
     }
+
+    .home__blob-img{width:350px ;}
 
 
     .home__social{

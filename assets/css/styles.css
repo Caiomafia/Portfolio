@@ -275,10 +275,13 @@ img{
     gap: 1rem;
 }
 
+
+
+
 .home__content{
-    grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
-    align-items: center;
+   display: flex;
+   align-items: center;
+   
 }
 
 .home__social{
@@ -302,7 +305,7 @@ img{
 }
 
 .home__blob-img{
-    width: 900px;
+    width: 400px;
 }
 
 .home__data{
