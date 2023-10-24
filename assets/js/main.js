@@ -72,7 +72,7 @@ tabs.forEach(tab =>{
 })
 
 
-
+/* 
 const modalViews = document.querySelectorAll('.services__modal'),
     modalBtns = document.querySelectorAll('.services__button'),
     modalCloses = document.querySelectorAll('.services__modal-close');
@@ -93,7 +93,7 @@ modalCloses.forEach(modalClose => {
             modalView.classList.remove('active-modal');
         });
     });
-});
+});*/
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper(".portfolio__container", {
@@ -181,18 +181,16 @@ themeButton.addEventListener('click', () => {
 })
 
 
+/*modal*/ 
+
+const btnmodal = document.querySelector("#btnmodal");
+const modal = document.querySelector("dialog");
+const btnFechar = document.querySelector("#btnfechar")
 
 
-const openModalButton = document.querySelector("#open-modals");
-const closeModalButton = document.querySelector("#close-modals");
-const modals = document.querySelector("#modals");
-const fade = document.querySelector("#fade");
-
-const toggleModal = () => {
-  modals.classList.toggle("hide");
-  fade.classList.toggle("hide");
-};
-
-[openModalButton, closeModalButton, fade].forEach((el) => {
-  el.addEventListener("click", () => toggleModal());
-});
+btnmodal.onclick = function(){
+    modal.showModal()
+}
+btnFechar.onclick = function(){
+    modal.close()
+}
