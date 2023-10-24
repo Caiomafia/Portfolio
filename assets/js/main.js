@@ -4,7 +4,7 @@ const  navMenu = document.getElementById('nav-menu'),
     navClose = document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
-/* Validate if constant exists */
+
 if(navToggle){
     navToggle.addEventListener('click', ()=>{
         navMenu.classList.add('show-menu');
@@ -12,7 +12,7 @@ if(navToggle){
 }
 
 /*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+
 if(navClose){
     navClose.addEventListener('click', ()=>{
         navMenu.classList.remove('show-menu');
@@ -28,6 +28,7 @@ function linkAction(){
     navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
@@ -70,7 +71,8 @@ tabs.forEach(tab =>{
     })
 })
 
-/*==================== SERVICES MODAL ====================*/
+
+
 const modalViews = document.querySelectorAll('.services__modal'),
     modalBtns = document.querySelectorAll('.services__button'),
     modalCloses = document.querySelectorAll('.services__modal-close');
@@ -107,7 +109,7 @@ let swiper = new Swiper(".portfolio__container", {
     },
 });
 
-/*==================== TESTIMONIAL ====================*/
+
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -153,11 +155,11 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
-// Previously selected topic (if user selected)
+
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
+
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
@@ -177,3 +179,20 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+
+const openModalButton = document.querySelector("#open-modals");
+const closeModalButton = document.querySelector("#close-modals");
+const modals = document.querySelector("#modals");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+  modals.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
+});
