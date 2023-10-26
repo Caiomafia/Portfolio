@@ -182,8 +182,37 @@ themeButton.addEventListener('click', () => {
 
 
 /*modal*/ 
-const modalbtn = document.querySelector(".modal-btn");
-modalbtn.onclick = function(){
-    
+const modals = document.querySelectorAll('.modal');
+const modalButtons = document.querySelectorAll('.modal-btn');
+const closeButtons = document.querySelectorAll('.close-btn');
+
+function toggleModal(modal) {
+    modal.classList.toggle('active');
 }
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    toggleModal(modal);
+}
+
+function closeModal(modal) {
+    modal.classList.remove('active');
+}
+
+function handleModalButtonClick(event) {
+    const modalId = event.target.dataset.modal;
+    openModal(modalId);
+}
+
+function handleCloseButtonClick(event) {
+    const modal = event.target.closest('.modal');
+    closeModal(modal);
+}
+
+modalButtons.forEach(button => button.addEventListener('click', handleModalButtonClick));
+closeButtons.forEach(button => button.addEventListener('click', handleCloseButtonClick));
+
+
+
+
 

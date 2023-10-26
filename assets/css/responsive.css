@@ -275,35 +275,118 @@
 
   /*modal */
 
-  .modal-overlay {
+  /* Estilo para o modal */
+.modal {
+    display: none;
     position: fixed;
-    top: 0;
+    z-index: 1;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
   }
   
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    display: none;
-  }
-  
+  /* Conteúdo do modal */
   .modal-content {
-    text-align: center;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
   }
   
-  .close-modal {
-    margin-top: 10px;
+  /* Estilo para o cabeçalho do modal */
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
   }
   
-  .modal-btn {
-    margin-right: 10px;
+  /* Estilo para o botão de fechar */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
   }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o corpo do modal */
+  .modal-body {
+    padding: 16px;
+  }
+  
+  /* Estilo para o rodapé do modal */
+  .modal-footer {
+    padding: 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Estilo para dispositivos pequenos (telas móveis, por exemplo) */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
+
+
+/*animaction
+@keyframes fadeIn {
+  0% {
+    background:rgba(0,0,0,.0);
+  }
+  100% {
+    background:rgba(0,0,0,.7);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    background:rgba(0,0,0,.7);
+  }
+  100% {
+    background:rgba(0,0,0,.0);
+  }
+}
+
+
+@keyframes modalFadeIn {
+  0% {
+    background-color:transparent;
+  }
+  100% {
+    background-color:white;
+  }
+}
+
+@keyframes modalContentFadeIn {
+  0% {
+    opacity:0;
+    top:-20px;
+  }
+  100% {
+    opacity:1;
+    top:0;
+  }
+}
+
+@keyframes sketchIn {
+	0% {
+		stroke-dashoffset: 778;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}*/

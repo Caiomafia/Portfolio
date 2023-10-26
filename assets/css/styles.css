@@ -162,6 +162,7 @@ img{
     max-width: 768px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+    overflow: hidden;
 }
 
 .grid{
@@ -353,7 +354,7 @@ img{
 }
 
 /*==================== BUTTONS ====================*/
-.button{
+.button , .modal-btn{
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
@@ -362,11 +363,11 @@ img{
     font-weight: var(--font-medium);
 }
 
-.button:hover{
+.modal-btn:hover{
     background-color: var(--first-color-alt);
 }
 
-.button__icon{
+.button__icon , .modal-btn{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
@@ -627,7 +628,7 @@ img{
     text-align: center;
 }
 
-.portfolio__button:hover .button__icon{
+.modal-btn:hover .button__icon{
     transform: translateX(.25rem);
 }
 
