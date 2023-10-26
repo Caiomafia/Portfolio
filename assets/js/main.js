@@ -182,15 +182,8 @@ themeButton.addEventListener('click', () => {
 
 
 /*modal*/ 
-
-const btnmodal = document.querySelector("#btnmodal");
-const modal = document.querySelector("dialog");
-const btnFechar = document.querySelector("#btnfechar")
-
-
-btnmodal.onclick = function(){
-    modal.showModal()
+const modalbtn = document.querySelector(".modal-btn");
+modalbtn.onclick = function(){
+    
 }
-btnFechar.onclick = function(){
-    modal.close()
-}
+
