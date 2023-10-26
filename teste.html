@@ -20,67 +20,8 @@
     }
 
 
-    /*animaction*/
-    
-    #modal2 {
-    transform:scale(1);
-    .modal-background {
-      background:rgba(0,0,0,.0);
-      animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      .modal {
-        background-color:transparent;
-        animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        h2,p {
-          opacity:0;
-          position:relative;
-          animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-        .modal-svg {
-          rect {
-            animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-          }
-        }
-      }
-    }
+   
 
-/*as animações*/
-@keyframes fadeIn {
-  0% {
-    background:rgba(0,0,0,.0);
-  }
-  100% {
-    background:rgba(0,0,0,.7);
-  }
-}
-
-@keyframes modalFadeIn {
-  0% {
-    background-color:transparent;
-  }
-  100% {
-    background-color:white;
-  }
-}
-
-@keyframes modalContentFadeIn {
-  0% {
-    opacity:0;
-    top:-20px;
-  }
-  100% {
-    opacity:1;
-    top:0;
-  }
-}
-
-@keyframes sketchIn {
-	0% {
-		stroke-dashoffset: 778;
-	}
-	100% {
-		stroke-dashoffset: 0;
-	}
-}
 
 
 
