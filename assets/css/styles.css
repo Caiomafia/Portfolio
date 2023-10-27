@@ -354,20 +354,21 @@ img{
 }
 
 /*==================== BUTTONS ====================*/
-.button , .modal-btn{
+.button , #modal-btn{
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    border: none;
 }
 
 .modal-btn:hover{
     background-color: var(--first-color-alt);
 }
 
-.button__icon , .modal-btn{
+.button__icon , #modal-btn{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
@@ -701,7 +702,8 @@ img{
 }
 
 .footer__container{
-    row-gap: 3.5rem;
+    display: flex; 
+    justify-content: space-between;
 }
 
 .footer__bg{
@@ -717,14 +719,16 @@ img{
 .footer__subtitle{
     font-size: var(--small-font-size);
 }
-.footer__links{
+.footer__link{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    color: white;
 }
 
 .footer__link:hover{
     color: var(--first-color-lighter);
+    cursor: pointer;
 }
 
 .footer__social{

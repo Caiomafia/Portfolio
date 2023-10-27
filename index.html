@@ -191,19 +191,19 @@
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
-            <h2 class="section__title">Trajetoria</h2>
+            <h2 class="section__title">Trajetória</h2>
             <div class="section__subtitle"> </div>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
                     <div class="qualification__button button--flex qualification__active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
+                        Educação
                     </div>
 
                     <div class="qualification__button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
+                        Trabalhos
                     </div>
                 </div>
 
@@ -301,7 +301,7 @@
                             <p class="portfolio__description">
                                 O projeto utiliza a OpenWeatherMap API para obter informações de clima de diferentes cidades. Os dados incluem temperatura, condições climáticas, umidade e velocidade dos ventos. 
                             </p>
-                              <button class="modal-btn"  data-modal="modal1">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
+                              <button id="modal-btn"  class="openModalBtn" data-modal-id="modal1">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
                         </div>
                     </div>
 
@@ -314,22 +314,10 @@
                                 O projeto "Login com Botão de Dark e White" oferece aos usuários a opção de 
                                 alternar entre os modos de tema escuro e claro, personalizando a interface de acordo com suas preferências visuais. 
                             </p>
-                              <button class=" modal-btn"  data-modal="modal2">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
+                              <button id="modal-btn"  class="openModalBtn" data-modal-id="modal1">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
                         </div>
                     </div>
 
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/Pizzaria.gif" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Pizzaria</h3>
-                            <p class="portfolio__description">
-                                O projeto é um cardápio online de uma pizzaria, desenvolvido com HTML, CSS e JavaScript. Os clientes podem ver os sabores de pizza disponíveis, personalizar seus pedidos e adicioná-los ao carrinho.
-                            </p>
-                            <button class=" modal-btn"  data-modal="modal1">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
-                        </div>
-                    </div>
                     <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/Todolsit.gif" alt="" class="portfolio__img">
 
@@ -338,15 +326,9 @@
                             <p class="portfolio__description">
                                 O projeto Todoist é uma aplicação que permite aos usuários criar e gerenciar listas de tarefas, utilizando HTML, CSS e JavaScript. Com uma interface agradável e responsiva.
                             </p>
-                            <button class=" modal-btn"  data-modal="modal3">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
+                            <button id="modal-btn"  class="openModalBtn" data-modal-id="modal3">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
                         </div>
                     </div>
-
-
-
-
-
-                    
 
                     <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/Rotas.gif" alt="" class="portfolio__img">
@@ -356,7 +338,7 @@
                             <p class="portfolio__description">
                                 Projeto  em Desenvolvimento para vans escolares visa aprimorar a eficiência e a segurança do transporte de crianças. Através de um sistema de comunicação avançado, os pais recebem mensagens prévias informando sobre o horário exato de busca e alertas de chegada em casa.
                             </p>
-                            <button class=" modal-btn"  data-modal="modal4">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
+                            <button id="modal-btn"  class="openModalBtn" data-modal-id="modal4">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
                         </div>
                     </div>
 
@@ -370,7 +352,7 @@
                               O controle financeiro traz uma interface simples e minimalista , com a opção de inserir os gastos e ganhos do mês . 
                             </p>
                             <p>HTML,CSS,JS</p>
-                            <button class=" modal-btn"  data-modal="moda5" >Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
+                                    <button class="openModalBtn" data-modal-id="modal5" id="modal-btn">Mais informações<i class="uil uil-arrow-right button__icon"></i></button>
                         </div>
                     </div>
                 </div>
@@ -380,13 +362,11 @@
                 <div class="swiper-button-prev">
                     <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
-
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
         <section class="testimonial section">
-        </section>
+    </section>
 
 
        
@@ -397,72 +377,92 @@
 
 
 
-   <!-- Botão para abrir o modal -->
-<button id="openModalBtn">Abrir Modal</button>
+  
 
-<!-- O Modal -->
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Conteúdo do modal vai aqui.</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
+   <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Clima API
+        </h2>
+        <p>Projeto desenvolvido com HTML,CSS E JS . </p>
+      </div>
+      <div class="modal-body">
+        <iframe  class="video-modal" width="100%" height="300px" src="https://www.youtube.com/embed/H7xnuMBZOw4?si=nFGPmn7RYenPoptp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-footer">Repositorio</button>
+        <button class="btn-footer">Demo</button>
+      </div>
     </div>
   </div>
-</div>
 
-
-
-<div id="modal3" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Conteúdo do modal vai aqui.</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <p>Projeto desenvolvido com as tecnologias HTML,CSS,JS</p>
+      </div>
+      <div class="modal-body">
+        <iframe  class="video-modal" width="100%" height="300px" src="https://www.youtube.com/embed/H7xnuMBZOw4?si=nFGPmn7RYenPoptp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button >Repositorio</button>
+        <button class="btn-footer">Demo</button>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="modal4" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Conteúdo do modal vai aqui.</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Apresentação de projetos 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo odit nostrum, ipsam eligendi aliquid quod? Tempora, non praesentium distinctio nihil fugiat natus! Nemo vitae eos explicabo sit, dolor placeat.</p>
+      </div>
+      <div class="modal-body">
+        <iframe  class="video-modal" width="100%" height="300px" src="https://www.youtube.com/embed/H7xnuMBZOw4?si=nFGPmn7RYenPoptp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-footer">Repositorio</button>
+        <button class="btn-footer">Demo</button>
+      </div>
     </div>
   </div>
-</div>
 
-
-<div id="modal5" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Conteúdo do modal vai aqui.</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Apresentação de projetos 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo odit nostrum, ipsam eligendi aliquid quod? Tempora, non praesentium distinctio nihil fugiat natus! Nemo vitae eos explicabo sit, dolor placeat.</p>
+      </div>
+      <div class="modal-body">
+        <iframe  class="video-modal" width="100%" height="300px" src="https://www.youtube.com/embed/H7xnuMBZOw4?si=nFGPmn7RYenPoptp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-footer">Repositorio</button>
+        <button class="btn-footer">Demo</button>
+      </div>
     </div>
   </div>
-</div>
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Apresentação de projetos 5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo odit nostrum, ipsam eligendi aliquid quod? Tempora, non praesentium distinctio nihil fugiat natus! Nemo vitae eos explicabo sit, dolor placeat.</p>
+      </div>
+      <div class="modal-body">
+        <iframe  class="video-modal" width="100%" height="300px" src="https://www.youtube.com/embed/H7xnuMBZOw4?si=nFGPmn7RYenPoptp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-footer">Repositorio</button>
+        <button class="btn-footer">Demo</button>
+      </div>
+    </div>
+  </div>
 <!--- end Modals---->
 
 
@@ -474,15 +474,7 @@
     <footer class="footer">
         <div class="footer__bg">
             <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Caio Mafra</h1>
-                </div>
-
-                <ul class="footer__links">        
-                     <li> <a href="#services" class="footer__link">Home</a></li>
-                    <li> <a href="#portfolio" class="footer__link">Portfolio</a></li>                
-                     <li><a href="#contact" class="footer__link">Sobre</a></li>
-                </ul>
+                <a class="footer__link"> @ Caio_Mafra</a>
 
                 <div class="footer__socials">
                     <a href="" class="footer__social" target="_blank"  class="footer__social">  <i class="uil uil-github-alt"></i></a>   

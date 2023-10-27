@@ -276,7 +276,7 @@
   /*modal */
 
   /* Estilo para o modal */
-.modal {
+  .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -288,105 +288,79 @@
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
   }
-  
+
   /* Conteúdo do modal */
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border-radius: 20px;
     width: 80%;
     max-width: 600px;
+    text-align: center;
   }
-  
+
   /* Estilo para o cabeçalho do modal */
   .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    color: black;
   }
-  
+
   /* Estilo para o botão de fechar */
   .close {
-    color: white;
+    color: rgb(221, 0, 0);
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   /* Estilo para o corpo do modal */
   .modal-body {
     padding: 16px;
   }
-  
+
+  .video-modal{border-radius: 10px;}
+
   /* Estilo para o rodapé do modal */
   .modal-footer {
     padding: 16px;
-    background-color: #5cb85c;
     color: white;
   }
-  
+  .btn-footer{
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 20px;
+  }
+
+  .btn-footer:hover{
+    background: #B9DFFF;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;}
+
+button{cursor: pointer;}
+
+
+
   /* Estilo para dispositivos pequenos (telas móveis, por exemplo) */
   @media (max-width: 768px) {
     .modal-content {
       width: 90%;
     }
+ 
   }
-  
 
 
-/*animaction
-@keyframes fadeIn {
-  0% {
-    background:rgba(0,0,0,.0);
-  }
-  100% {
-    background:rgba(0,0,0,.7);
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    background:rgba(0,0,0,.7);
-  }
-  100% {
-    background:rgba(0,0,0,.0);
-  }
-}
-
-
-@keyframes modalFadeIn {
-  0% {
-    background-color:transparent;
-  }
-  100% {
-    background-color:white;
-  }
-}
-
-@keyframes modalContentFadeIn {
-  0% {
-    opacity:0;
-    top:-20px;
-  }
-  100% {
-    opacity:1;
-    top:0;
-  }
-}
-
-@keyframes sketchIn {
-	0% {
-		stroke-dashoffset: 778;
-	}
-	100% {
-		stroke-dashoffset: 0;
-	}
-}*/

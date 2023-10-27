@@ -136,7 +136,7 @@ window.addEventListener('scroll', scrollActive);
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
     const nav = document.getElementById('header');
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header');
 }
 window.addEventListener('scroll', scrollHeader);
@@ -145,7 +145,7 @@ window.addEventListener('scroll', scrollHeader);
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
 }
 window.addEventListener('scroll', scrollUp);
@@ -182,37 +182,36 @@ themeButton.addEventListener('click', () => {
 
 
 /*modal*/ 
-const modals = document.querySelectorAll('.modal');
-const modalButtons = document.querySelectorAll('.modal-btn');
-const closeButtons = document.querySelectorAll('.close-btn');
 
-function toggleModal(modal) {
-    modal.classList.toggle('active');
-}
+// Obter todos os botões que abrem os modais
+var modalButtons = document.querySelectorAll(".openModalBtn");
 
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    toggleModal(modal);
-}
+// Associar um evento de clique a cada botão
+modalButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    // Obter o ID do modal associado a este botão
+    var modalId = button.getAttribute("data-modal-id");
 
-function closeModal(modal) {
-    modal.classList.remove('active');
-}
+    // Obter o modal correspondente ao ID
+    var modal = document.getElementById(modalId);
 
-function handleModalButtonClick(event) {
-    const modalId = event.target.dataset.modal;
-    openModal(modalId);
-}
+    // Quando o usuário clicar no botão, abrir o modal correspondente
+    modal.style.display = "block";
 
-function handleCloseButtonClick(event) {
-    const modal = event.target.closest('.modal');
-    closeModal(modal);
-}
+    // Associar evento de clique ao botão de fechar do modal
+    var closeButton = modal.querySelector(".close");
+    closeButton.addEventListener("click", function() {
+      modal.style.display = "none";
+      let scrool
+    });
 
-modalButtons.forEach(button => button.addEventListener('click', handleModalButtonClick));
-closeButtons.forEach(button => button.addEventListener('click', handleCloseButtonClick));
-
-
-
+    // Fechar o modal se o usuário clicar fora dele
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  });
+});
 
 
