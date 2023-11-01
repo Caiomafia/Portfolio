@@ -275,7 +275,7 @@
 
   /*modal */
 
-  /* Estilo para o modal */
+ 
   .modal {
     display: none;
     position: fixed;
@@ -289,7 +289,7 @@
     padding-top: 60px;
   }
 
-  /* Conteúdo do modal */
+
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
@@ -300,13 +300,12 @@
     text-align: center;
   }
 
-  /* Estilo para o cabeçalho do modal */
+
   .modal-header {
     padding: 2px 16px;
     color: black;
   }
 
-  /* Estilo para o botão de fechar */
   .close {
     color: rgb(221, 0, 0);
     float: right;
@@ -321,14 +320,13 @@
     cursor: pointer;
   }
 
-  /* Estilo para o corpo do modal */
+ 
   .modal-body {
     padding: 16px;
   }
 
   .video-modal{border-radius: 10px;}
 
-  /* Estilo para o rodapé do modal */
   .modal-footer {
     padding: 16px;
     color: white;
@@ -355,7 +353,6 @@ button{cursor: pointer;}
 
 
 
-  /* Estilo para dispositivos pequenos (telas móveis, por exemplo) */
   @media (max-width: 768px) {
     .modal-content {
       width: 90%;
