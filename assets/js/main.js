@@ -181,10 +181,10 @@ themeButton.addEventListener('click', () => {
 })
 
 
-/*modal*/ 
+/*modal
 
 // Obter todos os botões que abrem os modais
-var modalButtons = document.querySelectorAll(".openModalBtn");
+const  modalButtons = document.querySelectorAll(".openModalBtn");
 
 // Associar um evento de clique a cada botão
 modalButtons.forEach(function(button) {
@@ -213,5 +213,5 @@ modalButtons.forEach(function(button) {
     }
   });
 });
-
+*/ 
 
