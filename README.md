@@ -17,7 +17,7 @@ Meu portfólio reflete essa paixão e conhecimento, apresentando uma variedade d
 
 
 - Atualmente
-
+Refazendo o projeto trazendo novas tecnologia 
 
 
 ## Feedback
