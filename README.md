@@ -16,6 +16,10 @@ Meu portfólio reflete essa paixão e conhecimento, apresentando uma variedade d
 - Marca pessoal 
 
 
+- Atualmente
+Trabalhando para melhoria e experimentar
+
+
 ## Feedback
 
 
