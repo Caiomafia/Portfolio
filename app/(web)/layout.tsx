@@ -14,23 +14,23 @@ const kalam = Kalam({
 const heebo = Heebo({ subsets: ["latin"], variable: "--font-heebo" });
 
 export const metadata: Metadata = {
-  title: "Bruno Barreiras - Desenvolvedor Front-End",
+  title: "Caio Mafra - Desenvolvedor Front-End",
   description:
     "Sou um Desenvolvedor Front-End. Tenho experiência no desenvolvimento de aplicações web de alto nível com as melhores tecnologias disponíveis no mercado, como React, TypeScript, Next.js e muito mais.",
   keywords: [
     "Bruno Barreiras",
     "Portifolio Bruno Barreiras",
-    "Bruno Barreiras Portfólio",
-    "Bruno Barreiras Portfolio",
-    "Bruno Barreiras Desenvolvedor Front-End",
-    "Bruno Barreiras Programador",
-    "Bruno Barreiras Programador Front-End",
+    "Caio Mafra Portfólio",
+    "Caio Mafra Portfolio",
+    "Caio Mafra Desenvolvedor Front-End",
+    "Caio Mafra Programador",
+    "Caio Mafra Programador Front-End",
     "Desenvolvimento Web",
     "Desenvolvedor Front-End",
     "Programador em Goiânia",
-    "Programador em Goiás",
+    "Programador em Belorizonte",
     "Programador em Brasília",
-    "Desenvolvedor Front-End em Goiânia",
+    "Desenvolvedor Front-End em Brasília",
     "Criar site",
     "Fazer site",
     "Desenvolver site",
@@ -44,11 +44,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Bruno Barreiras",
-      url: "https://www.linkedin.com/in/brunobarreiras/",
+      name: "Caio Mafra",
+      url: "https://www.linkedin.com/in/caio-mafra/",
     },
   ],
-  creator: "Bruno Barreiras",
+  creator: "Caio Mafra",
   generator: "Next.js",
 };
 

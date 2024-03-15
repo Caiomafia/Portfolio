@@ -16,16 +16,16 @@ import { TypeActiveProject } from "@/@types/type-active-project";
 export default async function Home() {
   const data = await getActiveProjects();
   const curriculo: string =
-    "https://docs.google.com/document/d/1N25WxL_HFLCqFqX-apuL1vt6OF6qitAKtym1SidgpHI/edit?usp=sharing";
+    "https://drive.google.com/file/d/1hJJA-yqgl-hRHUkqjh7E_nc0P0lu8DaX/view?usp=drive_link";
 
   return (
     <>
       <section className="flex min-h-[calc(100vh-6rem)] w-full flex-wrap-reverse items-end justify-center sm:items-center sm:justify-between sm:pt-5 lg:relative">
         <div className="flex flex-col items-center justify-center text-center sm:items-start sm:text-left">
           <h1 className="mb-3 font-kalam text-4xl font-normal text-custom-primary 2xl:text-6xl">
-            Olá eu sou o
+           
             <strong className="text-gradient-text block font-bold">
-              Bruno Barreiras
+              Caio Mafra
             </strong>
           </h1>
 
@@ -34,8 +34,7 @@ export default async function Home() {
           </h2>
 
           <p className="mb-8 w-56 font-heebo text-base font-normal text-custom-primary lg:w-96 2xl:text-lg">
-            Sou especialista na construção de aplicativos web inovadores usando
-            tecnologias como React e Next.js.
+             Dedicando todos os dias para entregar as melhores soluções para seu negocio 
           </p>
 
           <span className="flex gap-6">
@@ -47,7 +46,7 @@ export default async function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/brunobarreiras/"
+              href="https://www.linkedin.com/in/caio-mafra/"
               target="_blank"
             >
               <Button>
@@ -92,18 +91,14 @@ export default async function Home() {
               <Subtitle>Sobre mim</Subtitle>
 
               <h3 className="font-heebo text-base font-black text-custom-primary lg:text-lg xl:text-xl">
-                Goiânia, Go
+                Brasília-DF
               </h3>
             </span>
 
             <p className="font-heebo text-base font-normal text-custom-primary lg:text-lg xl:text-xl">
-              Me chamo Bruno, nascido em 2005, sou um dedicado desenvolvedor
-              front-end, formado pelo Vai na Web. Minha experiência abrange
-              projetos em diversos setores, incluindo arquitetura, assessoria
-              jurídica, saúde e prestação de serviços. Comprometido com a
-              entrega de soluções visuais e funcionais, estou sempre em busca de
-              aprimorar minhas habilidades para oferecer resultados excepcionais
-              em cada projeto que abraço.
+            Olá! Sou um estudante de Análise e Desenvolvimento de Sistemas apaixonado por enfrentar desafios e aprender coisas novas. Tenho uma sólida base em HTML, CSS, Git, Tailwind, JavaScript e PostgreSQL, que adquiri através de estudos dedicados e aplicação prática.
+
+Atualmente, estou expandindo meu conjunto de habilidades para incluir React Native e TypeScript, com o objetivo de me tornar um desenvolvedor full-stack versátil e eficiente. Acredito que a melhor maneira de aprender é fazendo, e estou sempre em busca de novos projetos e desafios para aplicar e aprimorar minhas habilidades.
             </p>
 
             <a href={curriculo} target="_blank">
