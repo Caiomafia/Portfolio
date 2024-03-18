@@ -26,7 +26,7 @@ export default function CardProjects({
           src={srcImage}
           className="max-h-32 w-full rounded-t-lg object-cover"
           width={300}
-          height={122}
+          height={150}
           alt={name}
           loader={({ src, width, quality }) => {
             return urlFor(src)
