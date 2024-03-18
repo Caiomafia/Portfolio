@@ -69,16 +69,7 @@ export default function Technologies() {
         </abbr>
       </a>
 
-      <a
-        href="https://sass-lang.com/"
-        target="_blank"
-        className="rounded p-1 transition-all hover:bg-b-primary"
-        aria-label="SASS Documentation"
-      >
-        <abbr title="SASS">
-          <CustomIcon icon="sass" size="30" color="#9955e8" />
-        </abbr>
-      </a>
+      
     </div>
   );
 }
