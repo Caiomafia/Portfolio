@@ -18,12 +18,7 @@ const Header = () => {
     <header className="z-50 flex h-24 w-full items-center justify-center rounded-lg shadow-2xl">
       <section className="container flex items-center justify-between px-4">
         <Link href="/">
-          <Image
-            src="/logo.png"
-            width={300}
-            height={300}
-            alt="Logo - Bruno Barreiras"
-          />
+           Caio Mafra
         </Link>
 
         <nav className="hidden items-center gap-10 scroll-smooth md:flex">
