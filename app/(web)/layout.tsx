@@ -4,7 +4,7 @@ import { Kalam, Heebo } from "next/font/google";
 
 import Header from "@/components/header";
 import GoToTop from "@/components/go-to-top";
-import Footer from "@/components/footer";
+import Footer from "@/footer";
 
 const kalam = Kalam({
   subsets: ["latin"],
